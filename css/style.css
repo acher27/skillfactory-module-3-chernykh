@@ -1,0 +1,700 @@
+/************************************************************
+                            Шрифты
+*************************************************************/
+@font-face { 
+    src: url('../fonts/OpenSans-Bold.ttf');
+    font-family: 'OpenSans-Bold';
+}
+@font-face { 
+    src: url('../fonts/OpenSans-Extra Bold.ttf');
+    font-family: 'OpenSans-ExtraBold';
+}
+@font-face { 
+    src: url('../fonts/OpenSans-Regular.ttf');
+    font-family: 'OpenSans-Regular';
+}
+@font-face { 
+    src: url('../fonts/OpenSans-SemiBold.ttf');
+    font-family: 'OpenSans-SemiBold';
+}
+@font-face { 
+    src: url('../fonts/OpenSans-Italic.ttf');
+    font-family: 'OpenSans-Italic';
+}
+/************************************************************
+           Раздел 1:Шапка + Наша  сильная организация
+*************************************************************/
+body {
+	background-color: rgb(255, 255, 255); 
+	margin: 0 auto;
+}
+.section1-color {
+	background-color: rgb(246, 242, 242); 
+}
+header {	
+	 display: flex;
+	 width: 1246px; 
+	 height: 98px; 
+	 background: rgb(49, 48, 48); 
+	 margin: 0 auto;
+	 justify-content: center;
+	 box-sizing: border-box;
+}
+.header-menu {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	position: relative;
+	right: 20px;
+}
+.header-menu > a {
+	color: rgb(255, 255, 255);
+	font-size: 14px;
+	text-transform: uppercase; /*верхний регистр*/
+	text-decoration: none;	/* Убираем подчеркивание */
+	padding: 45px 47px 33px;
+	font-family: 'OpenSans-Bold';
+}
+.header-menu > a:hover {
+	background-color:rgb(255, 63, 64);  /*цвет фона при наведении на ссылку*/
+}
+.section1 {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	max-width: 1246px;
+	margin: 0 auto;
+	padding-left: 1vw;
+	padding-right: 1vw;
+    padding-top: 103px;
+	padding-bottom: 94px;
+}
+.section1-mark {
+	position: relative;
+    width: 623px;
+    vertical-align: top;
+    margin-right: 42px;
+    margin-bottom: 21px;
+	vertical-align: top;
+}
+.section1-mark h1 {
+	font-size: 60px;
+	text-transform: uppercase; /*верхний регистр*/
+	margin-bottom: 40px;
+	margin: 0;
+	font-weight: bold;
+	font-family: 'OpenSans-ExtraBold';
+}
+.section1-text {
+	font-size: 16px;
+	margin-bottom: 62px;
+	opacity: 0.6;
+	font-family: 'OpenSans-Regular';
+}
+.section1-foto {  
+	display: flex;
+}
+.section1-nubex {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(255, 45, 45);
+    width: 226px;
+	padding: 22px 0;
+	text-decoration: none;	/*Убираем подчеркивание */
+	font-family: 'OpenSans-Bold';
+	font-size: 18px;
+	border-radius: 5px;
+}
+/************************************************************
+                  Раздел 2: Наши услуги
+*************************************************************/
+.section2 {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	max-width: 1246px;
+	margin: 0 auto;
+	padding-left: 1vw;
+	padding-right: 1vw;
+    padding-top: 103px;
+	padding-bottom: 94px;
+}
+.section2-left{
+	flex: 1 1 502px;
+	max-width: 502px;
+	margin-bottom: 50px;
+	margin-right: 50px;
+}
+.section2-mark h2 {
+	flex: 1 1 606;
+	max-width: 606px;
+	font-size: 42px;
+	color: rgb(51, 51, 51);
+	text-transform: uppercase; /*верхний регистр*/
+	margin-bottom: 40px;
+	margin: 0;
+	opacity: 0.8;
+	font-family: 'OpenSans-Bold';
+}
+.section2-text {
+	flex: 1 1 606;
+	max-width: 606px;
+	font-size: 16px;
+	margin-bottom: 62px;
+	opacity: 0.6;
+	font-family: 'OpenSans-Regular';
+}
+.section2-nubex {
+    display: inline-block;
+    color: rgb(255, 45, 45);
+    text-align: center;
+    background-color: rgb(255, 255, 255);  /*Цвет кнопки */
+    width: 226px;
+	padding: 22px 0;
+	text-decoration: none;	/*Убираем подчеркивание */
+	font-family: 'OpenSans-Regular';
+	font-size: 18px;
+	border: 2px solid rgb(255, 45, 45); /* Параметры рамки */
+	border-radius: 5px;
+}
+.section2-right {
+	flex: 1 1;
+	max-width: 623px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.section2-service {
+	flex: 1 1 288px;
+	width: 288px;
+	margin-bottom: 30px;
+}
+.section2-service: nth-child(odd) {
+	margin-right: 32px;
+}
+.section2-service > h3 {
+	letter-spacing: 1.5px;
+	font-family: 'OpenSans-SemiBold';
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+.section2-service > h3::before {
+	display: block;
+	width: 41px;
+	height: 41px;
+	margin-bottom: 23px;
+}
+.section2-service-text {
+	font-size: 16px;
+	margin-bottom: 62px;
+	opacity: 0.6;
+	font-family: 'OpenSans-Regular';
+}
+.section2-service > .management::before {
+	content: url('../img/serv-1.png');
+}
+.section2-service > .ui::before {
+	content: url('../img/serv-2.png');
+}
+.section2-service > .logo::before {
+	content: url('../img/serv-3.png');
+}
+.section2-service > .animation::before {
+	content: url('../img/serv-4.png');
+}
+/************************************************************
+                Раздел 3: Особенности продуктов
+*************************************************************/
+.section3 {
+    padding-top: 94px;
+	padding-bottom: 52px;
+}
+.section3-mark1 {
+    width: 100%;
+	text-align: center;
+	margin-bottom: 67px;
+}
+.section3-mark {
+	text-transform: uppercase; 
+	font-size: 42px;
+	margin-bottom: 16px;
+	font-family: 'OpenSans-Bold';
+	opacity: 0.6;
+	padding-left: 14px;
+}
+.section3-text {
+	font-family: 'OpenSans-Regular';
+	font-size: 16px;
+	max-width: 500px;
+	margin: 0 auto 30px;
+	opacity: 0.7;
+}
+.section3-prod {
+	width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 60px;
+}
+.section3-prod a {
+	position: relative;
+    left: 45px;
+	color: black;
+	margin-right: 55px;
+	font-size: 22px;
+	font-family: 'OpenSans-SemiBold';
+	text-transform: uppercase; /*Верхний регистр*/
+	text-decoration: none; /*Убираем подчеркивание*/
+	opacity: 0.7;
+}
+.section3-prod a.section3-prod1 {
+	color: red;
+	opacity: 1;
+}
+.section3-fotoall {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.section3-foto {
+	flex: 1 1 24%;
+    min-width: 250px; 
+    max-width: 299px;
+	height: 291px;
+	margin-bottom: 18px;
+	object-fit: cover;
+}
+/************************************************************
+               Раздел 4: Встреча с нашей командой
+*************************************************************/
+.section4 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	max-width: 1246px;
+	margin: 0 auto;
+	padding-left: 1vw;
+	padding-right: 1vw;
+    padding-top: 10px;
+	padding-bottom: 94px;
+}
+.section4-mark {
+	width: 100%;
+	text-align: left;
+	margin-bottom: 67px;
+}
+.section4-mark {
+	margin-bottom: 23px;
+}
+.section4-mark > h2 {
+	font-family: 'OpenSans-Bold';
+	font-size: 42px;
+	text-transform: uppercase; /*верхний регистр*/
+	opacity: 0.6;
+	margin-bottom: 23px;
+}
+.section4-text {
+	font-family: 'OpenSans-Regular';
+	font-size: 16px;
+	max-width: 460px;
+	margin-bottom: 30px;
+}
+.section4-manager {
+    width: 100%;
+	display: flex;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	position: relative;
+	margin-top: 70px;
+}
+.section4-foto {
+	margin: 0;
+}
+.section4-mw {
+	position: absolute;
+	max-width: 642px;
+	top: 5px;
+	left: 393px;
+}
+.section4-mw h3 {
+	position: relative;
+    bottom: 5px;
+	font-size: 30px;
+	font-family: 'OpenSans-SimBold';
+	text-transform: uppercase;
+	opacity: 0.8;
+	margin-bottom: 16px;
+}
+.section4-text2  {
+	font-family: 'OpenSans-Regular';
+	font-size: 16px;
+}
+.section4-mwsn a {
+	font-family: 'OpenSans-Italic';
+	font-size: 18px;
+	text-decoration: none;
+	margin-right: 30px;
+	color: rgb(45, 45, 45);
+}
+.section4-mwfotoall {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-left: 67px;
+}
+.section4-mwfotoall2 {
+	position: relative;
+	margin-top: 18px;
+	margin-right: 18px;
+}
+.section4-mwfotoall2 > h3 {
+	visibility: hidden;
+	color: black;
+	opacity: 0.6;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 37px;
+	text-align: center;
+}
+.member:hover h3 {
+	visibility: visible;
+}
+.section4-mwfoto {
+	width: 194px; 
+	height: 213px;
+}
+/************************************************************
+               Раздел 5: Советы по дизайну
+*************************************************************/
+.section5 {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	background-color: rgb(245, 240,221);
+	padding-top: 124px;
+	padding-bottom: 140px;
+}
+.section5-mark 	{
+	max-width: 1246px;
+	margin: 0 auto;
+	text-align: center;
+}
+.section5-mark h2 {
+	font-family: 'OpenSans-Bold';
+	font-size: 42px;
+	color: rgb(255, 255, 255);
+	opacity: 0.8;
+	text-transform: none;
+	margin-bottom: 30px;
+}
+.section5-text {
+	font-family: 'OpenSans-Regular';
+	font-size: 16px;
+	color: rgb(255, 255, 255);
+	margin-bottom: 50px;
+}
+.section5-form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.section5-form > .section5-email {
+    color: rgb(45, 45, 45);
+    opacity: 0.6;
+    background-color: rgb(255, 255, 255); 
+	font-family: 'OpenSans-Regular';
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	flex: 0 1 521px;
+	max-width: 521px;
+	min-height: 79px;
+	padding: 0;
+	padding-left: 35px;
+	border: none;
+	border-radius: 5px;
+	margin-right: 22px;
+}
+.section5-form > .section5-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: rgb(245, 245, 245);
+	font-size: 18px;
+	font-family: 'OpenSans-Bold';
+	width: 214px;
+	min-height: 79px;
+	background-color: rgb(245, 45, 45);
+	border: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+}
+/************************************************************
+              Раздел 6: Как с нами связаться
+*************************************************************/
+.section6 {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	flex-wrap: nowrap;
+	padding-top: 92px;
+	padding-bottom: 110px;
+	max-width: 1246px;
+	margin: 0 auto;
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+.section6-mark {
+	max-width: 731px;
+	margin-right: 107px;
+}
+.section6-mark h2 {
+    font-family: 'OpenSans-Bold';
+	font-size: 42px;
+	color: rgb(45, 45, 45);
+	opacity: 0.6;
+	text-transform: uppercase; /*верхний регистр*/
+	margin-bottom: 34px;
+}
+.section6-text {
+	font-family: 'OpenSans-Regular';
+	font-size: 16px;
+	color: rgb(45, 45, 45);
+	max-width: 720px;
+	margin-bottom: 50px;
+}
+.section6-form {
+	display: flex;
+	flex-wrap: wrap;
+}
+.section6-line {
+	width: 122px;
+	height: 3px;
+	background-color: #FF2D2D;
+	border: none;
+	margin-left: 0;
+	margin-bottom: 75px;	
+}
+.section6-name {
+	display: flex;
+    color: rgb(45, 45, 45);
+    opacity: 0.6;
+    text-align: left;
+    background-color: rgb(229, 229, 229);  /*Цвет кнопки */
+	font-family: 'OpenSans-Regular';
+	font-size: 18px;
+	align-items: center;
+	box-sizing: border-box;
+	padding-left: 54px;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 45px;
+}
+.section6-email {
+	display: flex;
+    color: rgb(45, 45, 45);
+    opacity: 0.6;
+    text-align: left;
+    background-color: rgb(229, 229, 229);  
+	font-family: 'OpenSans-Regular';
+	font-size: 18px;
+	align-items: center;
+	box-sizing: border-box;
+	padding-left: 54px;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 45px;
+}
+.section6-form > .section6-name,
+.section6-form > .section6-email {
+	width: 339px;
+	max-width: 339px;
+	height: 69px;
+}
+.section6-form > .section6-name {
+	margin-right: 53px;
+}
+.section6-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+    color: rgb(245, 245, 245);
+    background-color: rgb(255, 45, 45);  
+    width: 731px;
+	max-width: 731px;
+	height: 72px;
+	border: none;
+	border-radius: 5px;
+	font-family: 'OpenSans-Bold';
+	font-size: 18px;
+	text-transform: uppercase; /*верхний регистр*/
+}
+.section6-massage {
+	resize: none;
+    color: rgb(45, 45, 45);
+    opacity: 0.6;
+    background-color: rgb(229, 229, 229); 
+	font-family: 'OpenSans-Regular';
+	font-size: 16px;
+    width: 731px;
+	max-width: 731px;
+	height: 249px;
+	box-sizing: border-box;
+	padding-top: 35px;
+	padding-left: 54px;
+	padding-bottom: 150px;
+	margin-bottom: 45px;
+	border: none;
+	border-radius: 5px;
+}
+.section6contact {
+	position: relative;
+	color: #e0e0e0;
+	background-color: rgb(45, 45, 45);
+	padding: 125px 78px;
+}
+.section6contact h2 {
+	font-family: 'OpenSans-Bold';
+	font-size: 18px;
+}
+.section6contact > h2 {
+	margin-bottom: 13px;
+}
+.section6-address {
+	line-height: 28px;
+}
+.section6-address > p {
+	margin-bottom: 17px;
+	font-family: 'OpenSans-Regular';
+	font-size: 16px;
+}
+.section6contact-background {
+	position: absolute;
+	z-index: -1;
+	width: 100vw;
+	height: 481px;
+	background-color: #2c2c2c;
+	clip-path: polygon(1000px 0, 100% 0, 100% 100%, 1000px 100%);
+	/* Свойство clip-path позволяет наложить на элемент маску, которая может визуально скрыть части этого элемента. Макса может быть самой разной формы, в данном случае это прямоугольник. */
+}
+/************************************************************
+                    Раздел 7: Подвал
+*************************************************************/
+.footer {
+	background-color: rgb(49, 48, 48);
+	color: rgb(255, 255, 255);
+	box-sizing: border-box;
+	padding: 19px 0 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 110px;
+	background-color: #2c2c2c;
+	max-width: 1246px;
+	margin: 0 auto;
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+.footer-links > a:not(:last-child) {
+	margin-right: 18px;
+}
+.footer-text {
+	color: rgb(255, 255, 255);
+	opacity: 0.5;
+	font-size: 16px;
+	font-family: 'OpenSans-Regular';
+}
+/****************************************************************
+                            @media
+****************************************************************/
+@media screen and (max-width: 1286px) {
+	.section1-mark {
+		flex-wrap: nowrap;
+	}
+	.section1-nubex {
+		width: 50%;
+		height: auto;
+	}
+	.section1-foto{
+		width: 100%;
+		height: auto;
+	}
+	.section3-fotoall {
+		justify-content: flex-start;
+	}
+	.section3-foto {
+		width: 299px;
+		max-width: 100%;
+		/* height: auto; */
+		margin-right: 1vw;
+	}
+	.section6 {
+		flex-wrap: wrap;
+		padding-left: initial;
+    	padding-right: initial;
+	}
+	.section6-mark {
+		margin: 0 auto;
+		margin-bottom: 30px;
+		padding: 0 1vw;
+	}
+	.section6contact {
+		width: 100%;
+		max-width: 100%;
+	}
+@media screen and (max-width: 900px) {
+	.section4-mw {
+		position: initial;
+	}
+	.section3-prod > li {
+		width: 100%;
+		text-align: center;
+	}
+	.section2 {
+		justify-content: center;
+	}
+	.section2-left,
+	.section2-right {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+@media screen and (max-width: 800px) {
+	.section2-left {
+		width: 100%;
+		max-width: 100%;
+	}
+	.section2-right {
+		width: 100%;
+		max-width: 100%;
+	}
+	.section6contact {
+		padding: 1vw;
+	}
+}
+@media screen and (max-width: 760px) {
+	.section5-form > .section6-name,
+	.section5-form > .section6-email,
+	.section5-form > .section6-massage,
+	.section5-form > .section6-button {
+		width: 100%;
+		max-width: 100%;
+	}
+	.section5-form > .section6-name {
+		margin-right: 0;
+	}
+}
