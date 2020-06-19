@@ -21,6 +21,10 @@
     src: url('../fonts/OpenSans-Italic.ttf');
     font-family: 'OpenSans-Italic';
 }
+body {
+	margin: 0;
+	font-family: 'OpenSans Regular', Helvetica, Arial, sans-serif;
+}
 /************************************************************
            Раздел 1:Шапка + Наша  сильная организация
 *************************************************************/
@@ -28,13 +32,19 @@ body {
 	background-color: rgb(255, 255, 255); 
 	margin: 0 auto;
 }
-.section1-color {
-	background-color: rgb(246, 242, 242); 
+main {
+	overflow: hidden;
+}
+.header-line {
+	width: 122px;
+	height: 3px;
+	background-color: #ff2d2d;
+	border: none;
 }
 header {	
 	 display: flex;
-	 width: 1246px; 
-	 height: 98px; 
+	 max-width: 1246px; 
+	 min-height: 98px; 
 	 background: rgb(49, 48, 48); 
 	 margin: 0 auto;
 	 justify-content: center;
@@ -54,9 +64,13 @@ header {
 	text-decoration: none;	/* Убираем подчеркивание */
 	padding: 45px 47px 33px;
 	font-family: 'OpenSans-Bold';
+    font-weight: bold;
 }
 .header-menu > a:hover {
 	background-color:rgb(255, 63, 64);  /*цвет фона при наведении на ссылку*/
+}
+.section {
+	background-color: rgb(246, 242, 242); 
 }
 .section1 {
     display: flex;
@@ -78,13 +92,22 @@ header {
     margin-bottom: 21px;
 	vertical-align: top;
 }
-.section1-mark h1 {
+.section1-org {
 	font-size: 60px;
 	text-transform: uppercase; /*верхний регистр*/
 	margin-bottom: 40px;
 	margin: 0;
 	font-weight: bold;
 	font-family: 'OpenSans-ExtraBold';
+	line-height: 1.2em;
+	margin-bottom: 18px;
+	letter-spacing: 1.5px;
+}
+.section1-org > .style-text {
+	letter-spacing: 6px;
+	word-break: break-word;
+	/*hyphens: auto;*/
+	/* Свойство word-break заставляет слова переноситься по буквам, если они не помещаются в родительский элемент.*/
 }
 .section1-text {
 	font-size: 16px;
@@ -323,7 +346,7 @@ header {
 	top: 5px;
 	left: 393px;
 }
-.section4-mw h3 {
+.section4-mw > h3 {
 	position: relative;
     bottom: 5px;
 	font-size: 30px;
@@ -621,80 +644,3 @@ header {
 /****************************************************************
                             @media
 ****************************************************************/
-@media screen and (max-width: 1286px) {
-	.section1-mark {
-		flex-wrap: nowrap;
-	}
-	.section1-nubex {
-		width: 50%;
-		height: auto;
-	}
-	.section1-foto{
-		width: 100%;
-		height: auto;
-	}
-	.section3-fotoall {
-		justify-content: flex-start;
-	}
-	.section3-foto {
-		width: 299px;
-		max-width: 100%;
-		/* height: auto; */
-		margin-right: 1vw;
-	}
-	.section6 {
-		flex-wrap: wrap;
-		padding-left: initial;
-    	padding-right: initial;
-	}
-	.section6-mark {
-		margin: 0 auto;
-		margin-bottom: 30px;
-		padding: 0 1vw;
-	}
-	.section6contact {
-		width: 100%;
-		max-width: 100%;
-	}
-@media screen and (max-width: 900px) {
-	.section4-mw {
-		position: initial;
-	}
-	.section3-prod > li {
-		width: 100%;
-		text-align: center;
-	}
-	.section2 {
-		justify-content: center;
-	}
-	.section2-left,
-	.section2-right {
-		width: 100%;
-		max-width: 100%;
-	}
-}
-@media screen and (max-width: 800px) {
-	.section2-left {
-		width: 100%;
-		max-width: 100%;
-	}
-	.section2-right {
-		width: 100%;
-		max-width: 100%;
-	}
-	.section6contact {
-		padding: 1vw;
-	}
-}
-@media screen and (max-width: 760px) {
-	.section5-form > .section6-name,
-	.section5-form > .section6-email,
-	.section5-form > .section6-massage,
-	.section5-form > .section6-button {
-		width: 100%;
-		max-width: 100%;
-	}
-	.section5-form > .section6-name {
-		margin-right: 0;
-	}
-}
